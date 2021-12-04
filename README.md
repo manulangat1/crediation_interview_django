@@ -4,6 +4,13 @@
 #### By **Kipchirchir Emmanuel Langat**
 ## Description
 This is a simple application built using django and django rest framework as an interview task for the  role of junior developer at Crediation. It has one api route that can be accessed to list all the users (from a json file) and also one can search for a specific user using their email address.
+
+## Live Preview
+* This displays a list of all the users [Screenshot-from-2021-12-04-23-18-59.png](https://postimg.cc/JsM71wsn)
+* How to search for a specific user using email  [Screenshot-from-2021-12-04-23-19-37.png](https://postimg.cc/hXDnk9YQ)
+* Specific user details  [Screenshot-from-2021-12-04-23-19-48.png](https://postimg.cc/dZcP4dd1)
+* User not found custom error message [Screenshot-from-2021-12-04-23-20-00.png](https://postimg.cc/dDGKDHPT)
+
 ## Setup/Installation Requirements *This set of instructions assumes that you are working with a unix system and using virtualenv to create and activate a virtual enviroment*
 * Head over to `https://github.com/manulangat1/crediation_interview_django` and copy the project url.
 * Head over to your local machine and navigate into the Desktop `cd  && cd Desktop`
