@@ -45,7 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #loading our users app 
-    'users.apps.UsersConfig'
+    'users.apps.UsersConfig',
+    #adding rest framework to list of installed apps
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +134,13 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+"""
+   These are rest framework specific settings. For this project we are going to use the Allow Any permissions
+"""
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny'
+    ]
+}

@@ -18,4 +18,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #rest framework login and logout routes 
+    path('api-auth/', include('rest_framework.urls'))
 ]
