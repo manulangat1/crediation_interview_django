@@ -22,9 +22,6 @@ from .serializers import UserSerializer
 """
   This is a function that reads a json file recursively, closes the file  and returns the content  
 """
-import os 
-import pathlib
-print(pathlib.Path().resolve())
 
 
 
@@ -38,7 +35,7 @@ def read_file(path):
 
 """
 def read_json():
-    return json.loads(read_file('/home/manulangat/Desktop/interviews/cred/crediation/users/data/users.json'))
+    return json.loads(read_file('users.json'))
 
 
 class UserViewSet(viewsets.GenericViewSet):
@@ -53,11 +50,11 @@ class UserViewSet(viewsets.GenericViewSet):
         params = self.request.query_params.get('search')
         
         if params:
-            
             res = [ i for i in read_json() if i['email'] == params ]
-           
             return res
+
         return read_json()
+
     def list(self,request):
         if(len(self.get_queryset()) > 0):
             serializer = self.get_serializer(self.get_queryset(),many=True)
