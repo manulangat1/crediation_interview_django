@@ -1,4 +1,4 @@
-![example workflow](https://github.com/github/docs/actions/workflows/django.yml/badge.svg)
+[![Django CI](https://github.com/manulangat1/crediation_interview_django/actions/workflows/django.yaml/badge.svg)](https://github.com/manulangat1/crediation_interview_django/actions/workflows/django.yaml)
 # CHECK THE USERS HERE !
 #### This is a simple django application built as an interview task for the role of junior developer at Crediation, {04/12/2021}
 #### By **Kipchirchir Emmanuel Langat**
