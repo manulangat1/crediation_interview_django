@@ -37,4 +37,6 @@ Link to the Implementation Plan
 Screenshots if needed.
 
 ### JIRA
+
 Link to the Jira story
+
