@@ -167,3 +167,16 @@ pip-selfcheck.json
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+sslVerify = true
+
+.elasticbeanstalk
+elasticbeanstalk
+elasticbeanstalk/
+.ebextensions
+ebextensions
+ebextensions/
+
+static
+staticfiles/
+staticfiles
+./staticfiles
