@@ -20,5 +20,5 @@ urlpatterns = [
     path('',include('users.urls')),
     path('admin/', admin.site.urls),
     #rest framework login and logout routes # noqa
-    path('api-auth/', include('rest_framework.urls'))
+    # path('api-auth/', include('rest_framework.urls'))
 ]
