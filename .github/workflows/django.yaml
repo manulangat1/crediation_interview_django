@@ -10,15 +10,19 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+          SECRET_KEY: ghjkfhjkfjf
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.7, 3.8, 3.9]
+        python-version: [3.7,  3.9]
 
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
+      env:
+          SECRET_KEY: ghjkfhjkfjf
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
@@ -27,5 +31,5 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        flake8
         pytest
+        
