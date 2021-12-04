@@ -10,6 +10,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+          SECRET_KEY: ghjkfhjkfjf
     strategy:
       max-parallel: 4
       matrix:
@@ -19,6 +21,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
+      env:
+          SECRET_KEY: ghjkfhjkfjf
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
@@ -28,3 +32,4 @@ jobs:
     - name: Run Tests
       run: |
         pytest
+        
