@@ -2,7 +2,9 @@
 
 from rest_framework import serializers
 
-
+"""
+   This is our serializer class that will be in use
+"""
 class UserSerializer(serializers.Serializer):
     index = serializers.IntegerField()
     isActive = serializers.BooleanField()
