@@ -26,6 +26,10 @@ import os
 import pathlib
 print(pathlib.Path().resolve())
 
+with open('users.json') as json_file:
+    print(json_file)
+    print(json.loads(json_file.read()))
+
 def read_file(path):
     file = open(path, "r")
     data = file.read()
