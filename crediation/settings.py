@@ -44,10 +44,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #loading our users app # noqa
-    'users.apps.UsersConfig',
     #adding rest framework to list of installed apps # noqa
     'rest_framework',
+    #loading our users app # noqa
+    'users.apps.UsersConfig',
+    
 ]
 
 MIDDLEWARE = [
